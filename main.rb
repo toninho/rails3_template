@@ -6,7 +6,7 @@ gem "mongo_ext"
 gem "mongoid", "2.0.0.beta6"
 gem "bson_ext", "1.0.1"
 
-gem 'haml', '>=3.0.4'
+gem 'haml'
 
 gem 'rails3-generators', :git => "git://github.com/indirect/rails3-generators.git"
 
