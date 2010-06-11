@@ -1,6 +1,6 @@
 run "rm -Rf README public/index.html public/javascripts/* test app/views/layouts/*"
 
-gem 'rails', '3.0.0.beta3'
+gem 'rails', '3.0.0.beta4'
 
 gem "mongo_ext" 
 gem "mongoid", "2.0.0.beta6"
