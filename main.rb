@@ -6,9 +6,11 @@ gem 'warden'
 gem 'devise'
 gem 'cancan'
 
-gem 'will_paginate', '3.0.pre2', :git => "git://github.com/mislav/will_paginate.git"
+gem 'will_paginate', '>= 3.0.pre2'
 #gem 'searchlogic'
 gem 'friendly_id', '~> 3.1'
+
+gem 'mysql2'
 
 gem 'tabs_on_rails', :source => 'http://gemcutter.org'
 
