@@ -1,1 +1,1 @@
-<pre><code>rails app_name -m http://github.com/fmeyer/rails3_template/raw/master/main.rb</code></pre>
+<pre><code>rails app_name -m http://github.com/toninho/rails3_template/raw/master/main.rb</code></pre>
