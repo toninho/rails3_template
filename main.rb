@@ -6,7 +6,7 @@ gem 'warden'
 gem 'devise'
 gem 'cancan'
 
-gem 'will_paginate', :git => "http://github.com/mislav/will_paginate.git", :branch => "rails3"
+gem 'will_paginate', '3.0.pre2', :git => "http://github.com/mislav/will_paginate.git"
 #gem 'searchlogic'
 gem 'friendly_id', '~> 3.1'
 
