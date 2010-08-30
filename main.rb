@@ -50,22 +50,22 @@ end
 GENERATORS
 
 # RVM
-file ".rvmrc", <<-RVMRC
-rvm gemset use #{app_name}
-RVMRC
+# file ".rvmrc", <<-RVMRC
+# rvm gemset use #{app_name}
+# RVMRC
 
-current_ruby =  /^(.*):/.match(%x{rvm info})[1]
-run "rvm gemset create #{app_name}"
-run "rvm gemset use #{app_name}"
-run "rvm 1.9.2@#{app_name} gem install bundler"
-run "rvm 1.9.2@#{app_name} -S bundle install"
+# current_ruby =  /^(.*):/.match(%x{rvm info})[1]
+# run "rvm gemset create #{app_name}"
+# run "rvm gemset use #{app_name}"
+# run "rvm 1.9.2 gem install bundler"
+run "rvm 1.9.2 -S bundle install"
 
 # Run the generators
-run "rvm 1.9.2@#{app_name} -S rails g devise:install"
-run "rvm 1.9.2@#{app_name} -S rails g devise User"
-run "rvm 1.9.2@#{app_name} -S rails g friendly_id"
-run "rvm 1.9.2@#{app_name} -S rails g rspec:install"
-run "rvm 1.9.2@#{app_name} -S rails g cucumber:install --rspec --capybara"  
+run "rvm 1.9.2 -S rails g devise:install"
+run "rvm 1.9.2 -S rails g devise User"
+run "rvm 1.9.2 -S rails g friendly_id"
+run "rvm 1.9.2 -S rails g rspec:install"
+run "rvm 1.9.2 -S rails g cucumber:install --rspec --capybara"  
 
 #Rake tasks
 rake 'asset:packager:create_yml' 
