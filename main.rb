@@ -2,9 +2,13 @@ run "rm -Rf README public/index.html public/javascripts/* test app/views/layouts
 run "echo \"source 'http://rubygems.org'\" > Gemfile"
 
 # GEMS
+gem 'rails', '3.0.0'
+
 gem 'warden'
 gem 'devise'
 gem 'cancan'
+
+gem 'inherited_resources', '1.1.2'
 
 gem 'will_paginate', '>= 3.0.pre2'
 #gem 'searchlogic'
@@ -28,8 +32,6 @@ gem "cucumber-rails",                 :group => :test, :git => "git://github.com
 gem "capybara",                       :group => :test
 gem "capybara-envjs",                 :group => :test
 gem "ruby-debug",                     :group => :test
-
-gem 'rails', '3.0.0'
 
 # PLUGINS
 plugin 'asset_packager', :git => 'git://github.com/sbecker/asset_packager.git'
